@@ -1,0 +1,9 @@
+﻿Imports Microsoft.VisualBasic
+
+Public Class ErrorLog
+
+    Public Sub Log(ByVal UserID As String, ByVal ErrorMessage As String, ByVal CommandText As String, ByVal ErrorPlace As String, ByVal ErrorPage As String)
+
+    End Sub
+
+End Class

@@ -1,0 +1,406 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>مدیریت کاربران TurkOrder.com</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies" />
+    <meta name="author" content="Tsoy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css' />
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    <script src="../js/core/jquery-2.1.1.min.js"></script>
+
+    <style type="text/css">
+    a
+    {
+        text-decoration: none;
+    }
+    
+    .mya:hover { 
+        background-color: #f1463a;
+        color:White;
+        border-radius: 5px;
+    }
+    
+    .mya{
+        /*background-color: #4CAF50; Green */
+        border: none;
+        color: #656464;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 17px;
+    }
+    
+    .mygreen:hover { 
+        background-color: #f1463a;
+        border-radius: 5px;
+        width:159px;
+    }
+    
+    .mygreen{
+        background-color: #32bea6;
+        color:White;
+        border: none;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        width:159px;
+    }
+    
+   .myred:hover { 
+        background-color: #32bea6;
+        border-radius: 5px;
+        width:159px;
+    }
+    
+    .myred{
+        background-color: #f1463a;
+        border: none;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        color:White;
+        width:159px;
+    }
+
+   .myorange:hover { 
+        background-color: #d36b0c;
+        border-radius: 5px;
+        width:159px;
+    }
+    
+    .myorange {
+        background-color: #e27513;
+        border: none;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        color:White;
+        width:159px;
+    }
+
+       .MyOrangeSmall:hover { 
+        background-color: #d36b0c;
+        border-radius: 5px;
+        width:auto;
+    }
+    
+    .MyOrangeSmall {
+        background-color: #e27513;
+        border: none;
+        padding: 4px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 2px;
+        color:White;
+        width:auto;
+    }
+    
+   .mygray:hover { 
+        background-color: #767679;
+        border-radius: 5px;
+        width:159px;
+    }
+    
+    .mygray {
+        background-color: #8b8c90;
+        border: none;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        color:White;
+        width:159px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left:0px;
+    }
+
+    .dropdown-content 
+    {
+        z-index:99;
+        border-radius: 5px;
+        direction:rtl;
+        text-align:center;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        /*min-width: 200px;*/
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 8px 8px;
+        z-index: 100;
+        width:100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .myDropdon
+    {
+        background-color:#8b8c90;
+        width:100%;
+        border: none;
+        padding: 8px 20px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 2px;
+        border-radius: 5px;
+        text-align:center;
+        direction:rtl;
+    }
+    .myDropdon:hover  
+    {
+        direction:rtl;
+        text-align:center;
+        background-color: #32bea6;
+        border: none;
+        width:100%;
+        padding: 8px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 2px;
+        border-radius: 5px;
+        color:White;
+    }
+    
+    .MyMasterBox
+    {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 15px 20px;
+        border: 1px;
+        -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+        background-color:#ebebeb;
+        direction:rtl;
+        text-align:right;
+        margin-top:20px;
+    }
+    
+    .MyBox 
+    {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 15px 20px;
+        border: 1px solid #ed8323;
+        -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+        margin-top:20px;
+        text-align:right;
+        direction:rtl;
+    }
+    
+        .MyBox5050
+    {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 15px 20px;
+        border: 1px solid #ed8323;
+        -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+        margin-top:10px;
+        margin-bottom:10px;
+        text-align:right;
+        direction:rtl;
+    }
+    
+    .myMobileMenu
+    {
+        background-color:#f0f0f0;
+        margin-bottom:3px;
+        -webkit-border-radius: 5px;
+        -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div class="global-wrap">
+            <header id="main-header">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a class="logo" href="NewOrders.aspx">
+                                    <img src="../Images/logo.png" alt="Logo" title="Image Title" width="96" height="42" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="user-profile-sidebar">
+                        <div class="user-profile text-center">
+                            <asp:Image ID="ImgLogo" runat="server" alt="Logo" 
+                            ImageUrl="../images/Logo.png" Width="95%" Height="95%" style="border-radius: 5px"></asp:Image>
+                            <br />
+                            <br />
+                            <p><asp:Label ID="lblMemberName" runat="server" Text="" Font-Size="X-Large"></asp:Label></p>
+                            <p><asp:Label ID="lblRegdate" runat="server" Text=""></asp:Label></p>
+                            <p><asp:Label ID="lblUserType" runat="server" Text=""></asp:Label></p>
+                            <p><asp:Label ID="lblThisMonthBought" runat="server" Text=""></asp:Label></p>
+                        </div>
+                        <ul class="list user-profile-nav">
+                        <!--
+                            <li><a href="default.aspx"><i class="fa fa-user"></i>General info</a>
+                            </li>
+                            <li><a href="Receipts.aspx"><i class="fa fa-money"></i>فیش های واریزی</a>
+                            </li>
+                            <li><a href="Factors.aspx"><i class="fa fa-print"></i>ووچر های صادر شده</a>
+                            </li>
+                            <li><a href="Accounting.aspx"><i class="fa fa-bar-chart-o"></i>حسابداری</a>
+                            </li>
+                            <li><a href="profile.aspx"><i class="fa fa-user"></i>مشخصات کاربری</a>
+                            </li>-->
+                            <li><a href="changepassword.aspx"><i class="fa fa-key"></i>تغییر رمز عبور</a>
+                            </li>
+                            <li><a onclick="Logout();"><i class="fa fa-sign-out"></i>خروج</a>
+                                <asp:Button ID="btnLogOut" runat="server" Text="LogOut" style="display:none;"></asp:Button>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+            <!-- Left Panel End -->
+
+            <div class="gap"></div>
+            <footer id="main-footer">
+                    <div class="container">
+                        <div class="row row-wrap">
+                            <div class="col-md-3">
+                                <a class="logo" href="NewOrders.aspx">
+                                    <img src="../images/Logo.png" alt="" width="287" height="107"/>
+                                </a>
+                                <ul class="list list-horizontal list-space">
+                                    <li>
+                                        <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" target="_blank" href="https://www.facebook.com/sprotoursIran/"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-send box-icon-normal round animate-icon-bottom-to-top" target="_blank" href="https://telegram.me/Sprotoursb2b"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-send box-icon-normal round animate-icon-bottom-to-top" target="_blank" href="https://telegram.me/Sprotoursb2bChat"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+            <script type="text/javascript">
+                function Logout() {
+                    document.getElementById('<%= btnLogOut.ClientID %>').click();
+                }
+            </script>
+        </div>
+        
+        <div id="pageModalMessageBox" class="modal fade" style="text-align: right;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" style="z-index:999; position:absolute;left:20px;top:10px;">&times;</button>
+                        <h4 class="modal-title"><label id="pageModalMessageBoxTitle"></label></h4>
+                    </div>
+                    <div class="modal-body">
+                        <asp:UpdatePanel ID="UpdatePanel11" runat="server">
+                            <ContentTemplate>
+                                <div class="MyBox">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <label id="pageModalMessageBoxMessage" style="color:Black; direction:rtl; text-align:right;"></label>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <img id="imgMessageBox" alt="" src="" style="width:100%" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">بستن</button>
+                    </div>
+
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+
+    
+    <script type="text/jscript">
+        function MessageBox(Title, Message) {
+            //alert(Title);
+            //alert(Message);
+            document.getElementById("pageModalMessageBoxTitle").innerHTML = Title;
+            document.getElementById("pageModalMessageBoxMessage").innerHTML = Message;
+            if (Title == 'خطا') {
+                document.getElementById("imgMessageBox").src = "../images/Icons/Information.png";
+            } else {
+                document.getElementById("imgMessageBox").src = "../images/Icons/done.png";
+            }
+            $("#pageModalMessageBox").modal('show');
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+    </script>
+
+    <script src="js/bootstrap.js"></script>
+
+    </form>
+</body>
+</html>

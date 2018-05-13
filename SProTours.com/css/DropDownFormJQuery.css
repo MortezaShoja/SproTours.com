@@ -1,0 +1,44 @@
+﻿
+
+ul #login-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 999;    
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 3px 3px 3px;
+}
+
+ul li #login-content {
+  right: 0;
+  width: 350px;  
+}
+
+ul #register-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 999;    
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 3px 3px 3px;
+}
+
+ul li #register-content {
+  right: 0;
+  width: 350px;  
+}
+
+
+
+
+
+
+

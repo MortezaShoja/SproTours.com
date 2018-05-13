@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>SproTours Hotel Invoice</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+</head>
+
+<body>
+<div dir="ltr" style="-webkit-border-radius: 5px;border-radius: 5px;padding: 15px 20px;border: 1px;-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);box-shadow: 0 2px 1px rgba(0,0,0,0.15);">
+    
+    <div id="divHeader">
+        <table style="width: 100%">
+            <tr>
+                <td style="text-align: left">
+                    <img alt="" src="http://www.sprotours.com/images/Logo.png" style="width: 165px; height: 70px" />
+                </td>
+                <td style="text-align: center">
+                    <h3 style="text-align: center">Hotel Invoice</h3>
+                </td>
+                <td style="text-align: right">
+                    <p class="modal-title">Request Code: #RequestCode#</p>
+                    <p class="modal-title">Request Date: #RequestDate#</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr style="color:#ed8323" />
+
+    <div id="divHotelInfo" style="-webkit-border-radius: 5px;border-radius: 5px;padding: 15px 20px;border: 1px solid #ed8323;-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);box-shadow: 0 2px 1px rgba(0,0,0,0.15); margin-top:20px;">
+        <table>
+            <tr>
+                <td style="width:20px;">
+                    <i class="fa fa-university"></i>
+                </td>
+                <td>
+                    <label style="vertical-align:bottom;">#HotelName#</label>
+                </td>
+                <td>
+                    #HotelStars#
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20px;">
+                    <i class="fa fa-map-marker"></i>
+                </td>
+                <td colspan="2">
+                    <label style="vertical-align:bottom;">#HotelAddress#</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divRequestDetails" style="-webkit-border-radius: 5px;border-radius: 5px;padding: 15px 20px;border: 1px solid #ed8323;-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);box-shadow: 0 2px 1px rgba(0,0,0,0.15); margin-top:20px;">
+        <table style="width:auto;">
+            <tr>
+                <td style="width:20px;">
+                    <i class="fa fa-calendar"></i>
+                </td>
+                <td>
+                    <label style="vertical-align:bottom;">Check-In: #CheckIn#</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20px;">
+                    <i class="fa fa-calendar"></i>
+                </td>
+                <td colspan="2">
+                    <label style="vertical-align:bottom;">Check-Out: #CheckOut#</label>
+                </td>
+            </tr>
+        </table>
+        <table style="width:100%;">
+            <thead style="color:#ed8323;">
+                <tr>
+                    <th style="border: thin solid #808080;">Row</th>
+                    <th style="border: thin solid #808080;">Room Type</th>
+                    <th style="border: thin solid #808080;">Adult</th>
+                    <th style="border: thin solid #808080;">Child</th>
+                    <th style="border: thin solid #808080;">Extra Bed</th>
+                    <th style="border: thin solid #808080;">Room Price</th>
+                    <th style="border: thin solid #808080;">QTY</th>
+                    <th style="border: thin solid #808080;">Total Room Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                #RoomTypes#
+<!--                <tr>
+                    <td style="border: thin solid #808080; text-align:center; color:#ed8323;">#Row#</td>
+                    <td style="border: thin solid #808080;">#RoomType#</td>
+                    <td style="border: thin solid #808080; text-align:center;">#Adult#</td>
+                    <td style="border: thin solid #808080; text-align:center;">#Child#</td>
+                    <td style="border: thin solid #808080; text-align:center;">#ExtraBed#</td>
+                    <td style="border: thin solid #808080; text-align:center;">#RoomPrice#</td>
+                    <td style="border: thin solid #808080; text-align:center;">#QTY#</td>
+                    <td style="border: thin solid #808080; text-align:center;">#TotalRoomPrice#</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align:right">Total : </td>
+                    <td style="border: thin solid #808080; text-align:center; color:#ed8323;">#TotalQty#</td>
+                    <td style="border: thin solid #808080; text-align:center; color:#ed8323;">#SumTotalRoomPrice#</td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="divFooter" style="-webkit-border-radius: 5px;border-radius: 5px;padding: 15px 20px;border: 1px solid #ed8323;-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);box-shadow: 0 2px 1px rgba(0,0,0,0.15); margin-top:20px;">
+        <div class="row">
+            <table style="width:100%;">
+                <tr>
+                    <td style="text-align: center;">
+                        Phone: <i class="fa fa-phone"></i> +90 (212) 465 66 12
+                    </td>
+                    <td style="text-align: center;">
+                        Fax: <i class="fa fa-fax"></i> +90 (212) 465 66 13
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        Email: <i class="fa fa-envelope"></i> Reservation@SproTours.com
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        © 2014-2016 Service Pro Turizm Organizasyon A.Ş.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

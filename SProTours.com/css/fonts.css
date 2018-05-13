@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'TungstenLight';
+    src: url('../fonts/TungstenLight.eot');
+    src: url('../fonts/TungstenLight.eot') format('embedded-opentype'), url('../fonts/TungstenLight.woff2') format('woff2'), url('../fonts/TungstenLight.woff') format('woff'), url('../fonts/TungstenLight.ttf') format('truetype'), url('../fonts/TungstenLight.svg#TungstenLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'TungstenBook';
+    src: url('../fonts/TungstenBook.eot');
+    src: url('../fonts/TungstenBook.eot') format('embedded-opentype'), url('../fonts/TungstenBook.woff2') format('woff2'), url('../fonts/TungstenBook.woff') format('woff'), url('../fonts/TungstenBook.ttf') format('truetype'), url('../fonts/TungstenBook.svg#TungstenBook') format('svg');
+}
+
+@font-face {
+    font-family: 'TungstenMedium';
+    src: url('../fonts/TungstenMedium.eot');
+    src: url('../fonts/TungstenMedium.eot') format('embedded-opentype'), url('../fonts/TungstenMedium.woff2') format('woff2'), url('../fonts/TungstenMedium.woff') format('woff'), url('../fonts/TungstenMedium.ttf') format('truetype'), url('../fonts/TungstenMedium.svg#TungstenMedium') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'TungstenSemibold';
+    src: url('../fonts/TungstenSemibold.eot');
+    src: url('../fonts/TungstenSemibold.eot') format('embedded-opentype'), url('../fonts/TungstenSemibold.woff2') format('woff2'), url('../fonts/TungstenSemibold.woff') format('woff'), url('../fonts/TungstenSemibold.ttf') format('truetype'), url('../fonts/TungstenSemibold.svg#TungstenSemibold') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
